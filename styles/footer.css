@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px gray solid;
+}
+
+footer a {
+    margin: 20px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+}

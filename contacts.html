@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Онлайн-магазин одежды hikikomori kai">
+    <meta name="keywords" content="онлайн-магазин, одежда, hikikomori, hikikomori kai, tokyo ghoul">
+    <link rel="icon" href="https://static.tildacdn.com/tild6263-3632-4464-a439-633230633734/favicon_2.ico">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/product_menu.css">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/feedback.js"></script>
+    <title>hikikomori kai</title>
+</head>
+<body>
+    <div id='product__menu' class="product__menu">
+        <div>Test text</div>
+        <span id="close__menu" class="close">&times;</span>
+    </div>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">hikikomori kai</a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <a href="delivery.html">Доставка</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contacts">
+            <div class="feedback">
+                <h2>Обратная связь</h2>
+                <form id="feedbackForm">
+                    <div class="form__group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+            <div id="responseMessage" class="response__message"></div>
+            <div>
+                <div class="info">
+                    <img class="vk__logo" src="https://www.mgutu-vf.ru/img/vk_1.png">
+                    VK:
+                </div>
+                <a href="https://vk.com/hikikomorikai">vk.com/hikikomorikai</a>
+            </div>
+            <div>
+                <div class="info">
+                    <img class="tg__logo" src="https://www.eyeclinic.ru/upload/medialibrary/624/20qdoimr62i2xpfpaqiu650s9cp11lc3.png">
+                    TG:
+                </div>
+                <a href="https://t.me/hikikomorikaiinfo">t.me/hikikomorikaiinfo</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакты</a>
+    </footer>
+</body>
+</html>

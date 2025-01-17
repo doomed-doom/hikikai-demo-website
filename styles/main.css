@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Yugitoy';
+    src: url('../fonts/YugitoyRegular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Главная страница */
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card__catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.card {
+    margin: 0 25px;
+}
+
+.card p{
+    text-align: center;
+    margin-top: -20px;
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card img:hover {
+    height: 270px;
+    width: 270px;
+    transition: all 0.3s ease;
+}
+
+/* Страница доставки */
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 22px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.delivery ol {
+    margin: 0px !important;
+}
+
+.delivery div {
+    word-wrap: normal;
+}
+
+.big__logo {
+    font-family: 'Yugitoy';
+    font-size: 65px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .delivery {
+        font-size: 20px;
+    }
+    .big__logo {
+        font-size: 45px;
+    }
+}
+
+/* Страница контактов */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    font-size: 22px;
+}
+
+.contacts div a {
+    font-size: 22px;
+    color: black;
+}
+
+.contacts div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feedback h2{
+    font-family: 'Yugitoy';
+    margin-top: 0;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback button {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+}
+
+.form__group label{
+    margin-bottom: 8px;
+}
+
+.response__message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.vk__logo{
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
+}
+
+.tg__logo{
+    width: auto;
+    height: 20px;
+    filter: grayscale(100%);
+    margin-right: -6px;
+}
+
+.info {
+    display: block !important;
+}

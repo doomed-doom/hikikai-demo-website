@@ -1,0 +1,97 @@
+.prod__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod img {
+    height: 500px;
+    width: auto;
+}
+
+.prod {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.prod__name {
+    font-size: 50px;
+}
+
+.prod__info p {
+    font-size: 18px;
+    overflow-wrap: break-word;
+}
+
+.buy__btn {
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    height: 55px;
+    width: 150px;
+}
+
+.product__menu {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    transition: opacity 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.product__menu.to__open {
+    opacity: 1;
+}
+
+.product__menu.to__close {
+    animation: fadeOut 0.3s ease;
+}
+
+.close {
+    font-size: 70px;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    right: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 1300px) {
+    .prod {
+        flex-direction: column;
+    }
+    .prod__card {
+        overflow-x: hidden;
+    }
+    .prod__name {
+        font-size: 20px;
+    }
+    .prod__info {
+        padding: 20px;
+    }
+    .buy__btn {
+        font-size: 18px;
+        height: 40px;
+        margin-top: 0px;
+    }
+    .prod img {
+        height: 400px;
+        width: auto;
+    }
+}
