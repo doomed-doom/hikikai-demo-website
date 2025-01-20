@@ -1,13 +1,40 @@
 footer {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-top: 1px gray solid;
+    border-top: 1px black solid;
+    background-color: white;
+    align-items: center;
+    overflow: hidden;
 }
 
 footer a {
     margin: 20px 20px;
     cursor: pointer;
     text-decoration: none;
-    color: gray;
+    color: black;
+    font-size: 18px;
+    z-index: 5;
+}
+
+footer img {
+    position: absolute;
+    bottom: -70px;
+    right: -75px;
+    height: 150px;
+    width: 150px;
+    filter: grayscale(100%) !important;
+    z-index: 1;
+}
+
+.footer__back {
+    opacity: 0.1;
+    position: absolute;
+    width: 100vw;
+    height: 85px;
+    background-image: url('https://png.klev.club/uploads/posts/2024-04/png-klev-club-zg7f-p-redan-png-6.png');
+    background-size: 100px 100px;
+    background-repeat: repeat-x;
+    z-index: 1;
 }

@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="./styles/product_menu.css">
     <script src="scripts/main.js"></script>
     <script src="scripts/feedback.js"></script>
+    <script src="scripts/shop__cart.js"></script>
     <title>hikikomori kai</title>
 </head>
 <body>
+    <div id="back__blackout" class="back__blackout"></div>
     <div id='product__menu' class="product__menu">
         <div>Test text</div>
         <span id="close__menu" class="close">&times;</span>
     </div>
     <header class="header">
+        <div class="header__back"></div>
         <div class="logo">
             <a href="index.html">hikikomori kai</a>
         </div>
@@ -33,11 +36,41 @@
                 </li>
             </ul>
         </nav>
+        <div id="shop__cart" class="shop__cart">
+            <img src="./images/2.png" alt="shop__cart">
+            <span class="shop__cart__count">2</span>
+        </div>
+        <div id="shop__menu" class="shop__menu">
+            <div id="close__shop__menu" class="close__shop__menu">&times;</div>
+            <div class="shop__menu__list">
+                <div class="shop__menu__card">
+                    <div class="shop__menu__card__info">
+                        <img src="https://static.tildacdn.com/stor6130-6161-4435-b737-306338303961/14423682.png" alt="">
+                        <div>Koe no katachi tote</div>
+                    </div>
+                    <span class="shop__menu__price">
+                        2 000₽
+                    </span>
+                </div>
+                <div class="shop__menu__card">
+                    <div class="shop__menu__card__info">
+                        <img src="https://static.tildacdn.com/stor6538-3262-4062-b463-623461306136/98351093.jpg" alt="">
+                        <div>t-shirts Koe no katachi</div>
+                    </div>
+                    <div class="shop__menu__price">
+                        4 000₽
+                    </div>
+                </div>
+                <div class="shop__menu__buy__btn">
+                    <button >Оформить заказ</button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="contacts">
             <div class="feedback">
-                <h2>Обратная связь</h2>
+                <p>Обратная связь</p>
                 <form id="feedbackForm">
                     <div class="form__group">
                         <label for="name">Имя:</label>
@@ -55,7 +88,7 @@
                 </form>
             </div>
             <div id="responseMessage" class="response__message"></div>
-            <div>
+            <div class="non">
                 <div class="info">
                     <img class="vk__logo" src="https://www.mgutu-vf.ru/img/vk_1.png">
                     VK:
@@ -72,6 +105,7 @@
         </div>
     </main>
     <footer>
+        <div class="footer__back"></div>
         <a href="delivery.html">Доставка</a>
         <a href="contacts.html">Контакты</a>
     </footer>
