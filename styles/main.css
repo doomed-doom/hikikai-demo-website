@@ -5,12 +5,76 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Ofont';
+    src: url('../fonts/ofont.ru_Ireland.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Главная страница */
+
+body {
+    padding: 0px !important;
+    margin: 0px !important;
+}
 
 main {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+}
+
+.back__img {
+    height: 100vh;
+    position: fixed;
+    height: 100vh !important;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.greet__message {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    transition: opacity 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.greet__message__img {
+    background-image: url('https://png.klev.club/uploads/posts/2024-04/png-klev-club-zg7f-p-redan-png-6.png');
+    background-size: 500px auto;
+    background-position: center 125px;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.greet__message__header {
+    font-family: 'Ofont';
+    font-size: 45px !important;
+    margin: 20px;
+}
+
+.greet__message div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    word-wrap: normal;
+    text-align: center;
 }
 
 .card__catalog {
@@ -82,7 +146,7 @@ main {
     filter: grayscale(100%);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .delivery {
         font-size: 20px;
     }
@@ -113,9 +177,15 @@ main {
     margin-top: 20px;
 }
 
-.feedback h2{
-    font-family: 'Yugitoy';
+.feedback {
+    margin-top: 0px !important;
+}
+
+.feedback p{
+    font-family: 'Ofont';
+    font-size: 50px;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .feedback form {
@@ -135,6 +205,10 @@ main {
     border-radius: 10px;
     height: 40px;
     width: 150px;
+}
+
+.form__group {
+    margin-top: 10 !important;
 }
 
 .form__group label{
@@ -161,4 +235,17 @@ main {
 
 .info {
     display: block !important;
+}
+
+.non {
+    margin-top: 0 !important;
+}
+
+@media screen and (max-width: 550px) {
+    .feedback form {
+        font-size: 20px;
+    }
+    .feedback p {
+        font-size: 40px;
+    }
 }

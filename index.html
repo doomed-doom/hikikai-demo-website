@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,17 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/product_menu.css">
     <script src="scripts/main.js"></script>
+    <script src="scripts/shop__cart.js"></script>
     <title>hikikomori kai</title>
 </head>
 <body>
+    <div id="back__blackout" class="back__blackout"></div>
+    <div id='greet' class="greet__message">
+        <div class="greet__message__img"></div>
+        <div class="greet__message__header">Добро пожаловать!</div>
+        <div>hikikomori kai — интернет-магазин дизайнерской одежды</div>
+        <span id="close__greet__message" class="close">&times;</span>
+    </div>
     <div id='product__menu' class="product__menu">
         <span id="close__menu" class="close">&times;</span>
         <div class="prod__card">
@@ -29,6 +37,7 @@
         </div>
     </div>
     <header class="header">
+        <div class="header__back"></div>
         <div class="logo">
             <a href="index.html">hikikomori kai</a>
         </div>
@@ -42,8 +51,38 @@
                 </li>
             </ul>
         </nav>
+        <div id="shop__cart" class="shop__cart">
+            <img src="./images/2.png" alt="shop__cart">
+            <span class="shop__cart__count">2</span>
+        </div>
+        <div id="shop__menu" class="shop__menu">
+            <div id="close__shop__menu" class="close__shop__menu">&times;</div>
+            <div class="shop__menu__list">
+                <div class="shop__menu__card">
+                    <div class="shop__menu__card__info">
+                        <img src="https://static.tildacdn.com/stor6130-6161-4435-b737-306338303961/14423682.png" alt="">
+                        <div>Koe no katachi tote</div>
+                    </div>
+                    <span class="shop__menu__price">
+                        2 000₽
+                    </span>
+                </div>
+                <div class="shop__menu__card">
+                    <div class="shop__menu__card__info">
+                        <img src="https://static.tildacdn.com/stor6538-3262-4062-b463-623461306136/98351093.jpg" alt="">
+                        <div>t-shirts Koe no katachi</div>
+                    </div>
+                    <div class="shop__menu__price">
+                        4 000₽
+                    </div>
+                </div>
+                <div class="shop__menu__buy__btn">
+                    <button >Оформить заказ</button>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
+    <main style="position: relative;">
         <div class="card__catalog">
             <div id='1' class="card">
                 <img src="https://static.tildacdn.com/stor6130-6161-4435-b737-306338303961/14423682.png">
@@ -70,8 +109,17 @@
                 <p>longsleeve i'm tired of my uselessness</p>
             </div>
         </div>
+        <div class="deco__img">
+            <img src="images/1.png">
+        </div>
     </main>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <filter id="grayscale">
+          <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
+        </filter>
+      </svg>
     <footer>
+        <div class="footer__back"></div>
         <a href="delivery.html">Доставка</a>
         <a href="contacts.html">Контакты</a>
     </footer>

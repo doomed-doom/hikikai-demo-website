@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    const greetingMessage = document.getElementById('greet')
+
+    if (sessionStorage.getItem('visited')) {
+    } else {
+        greetingMessage.style.display = 'flex'
+    }
+
+    sessionStorage.setItem('visited', 'true')
+
+    
+
     const products = [
         ['https://static.tildacdn.com/stor6130-6161-4435-b737-306338303961/14423682.png', 'Koe no katachi tote', '2 000₽.', 'toe Koe no katachi, fabric composition 71 polye, 24 viscose, 5 spandex, machine embroidery.'],
         ['https://static.tildacdn.com/stor6538-3262-4062-b463-623461306136/98351093.jpg', 't-shirts Koe no katachi', '4 000₽.', 't-shirts Koe no katachi, fabric composition 97 cotton 3 lycra, machine embroidery, loose fit.'],
@@ -43,6 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', event => {
         if (event.key === 'Escape') {
             productMenu.style.display = 'none';
+            greetingMessage.style.display = 'none'
         }
     });
+
+    const closeGreeting = document.getElementById('close__greet__message')
+
+    closeGreeting.addEventListener('click', () => {
+        greetingMessage.style.display = 'none'
+    })
+
 });
